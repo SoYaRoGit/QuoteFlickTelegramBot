@@ -41,5 +41,8 @@ class Settings(BaseSettings):
 
         return token
 
+    class Config:
+        env_file = ".env"
+
 
 settings = Settings()
